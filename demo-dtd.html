@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Basics Example</title>
+
+  <!-- Responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Simple CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+
+    header, nav, main, footer {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: blue;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Welcome to HTML5</h1>
+    <p>This page demonstrates a basic HTML5 structure.</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>What is HTML?</h2>
+      <p>
+        HTML (HyperText Markup Language) is used to structure web pages.
+      </p>
+    </section>
+    <section>
+      <h2>What DTD does?</h2>
+      <ul>
+        <li>Instructs the browser to use Standards Mode (modern, correct HTML/CSS behavior)</li>
+        <li>Prevents the browser from falling back to Quirks Mode, which emulates old, buggy browser behavior for backward compatibility</li>
+        <li>Ensures consistent layout and CSS interpretation across browsers</li>
+      </ul>
+      For modern web pages, <b>DOCTYPE html</b> specifically declares HTML5.
+    </section>
+
+    <section>
+      <h2>Example List</h2>
+      <ul>
+        <li>Headings</li>
+        <li>Paragraphs</li>
+        <li>Links</li>
+        <li>Lists</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Button Example</h2>
+      <button onclick="sayHello()">Click me</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 HTML5 Teaching Example</p>
+  </footer>
+
+  <!-- Simple JavaScript -->
+  <script>
+    function sayHello() {
+      alert("Hello, HTML5!");
+    }
+  </script>
+
+</body>
+</html>
